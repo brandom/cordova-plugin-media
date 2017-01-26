@@ -43,6 +43,8 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 
+import com.jakewharton.disklrucache;
+
 /**
  * This class called by CordovaActivity to play and record audio.
  * The file can be local or over a network using http.

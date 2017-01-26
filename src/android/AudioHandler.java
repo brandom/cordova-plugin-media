@@ -43,7 +43,8 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 
-import com.jakewharton.disklrucache.DiskLruCache;
+// import com.jakewharton.disklrucache.DiskLruCache;
+import cz.fhucho.android.util.SimpleDiskCache;
 
 /**
  * This class called by CordovaActivity to play and record audio.
@@ -57,6 +58,8 @@ import com.jakewharton.disklrucache.DiskLruCache;
  *     sdcard:        file name is just sound.mp3
  */
 public class AudioHandler extends CordovaPlugin {
+
+    public static SimpleDiskCache cache = SimpleDiskCache.open("test", 1.0f, 10000);
 
     public static String TAG = "AudioHandler";
     HashMap<String, AudioPlayer> players;  // Audio player object

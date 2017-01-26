@@ -68,7 +68,7 @@ id="cordova-plugin-media"
         <source-file src="lib/DiskLruCache/DiskLruCache.java" target-dir="src/com/jakewharton/disklrucache" />
         <source-file src="lib/DiskLruCache/StrictLineReader.java" target-dir="src/com/jakewharton/disklrucache" />
         <source-file src="lib/DiskLruCache/Util.java" target-dir="src/com/jakewharton/disklrucache" />
-        <source-file src="lib/simple-disk-cache/SimpleDiskCache.java" target-dir="cz/fhucho/android/util" />        
+        <source-file src="lib/simple-disk-cache/SimpleDiskCache.java" target-dir="src/cz/fhucho/android/util" />
     </platform>
 
      <!-- amazon-fireos -->

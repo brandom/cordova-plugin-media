@@ -43,7 +43,7 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 
-import com.jakewharton.disklrucache;
+import com.jakewharton.DiskLruCache;
 
 /**
  * This class called by CordovaActivity to play and record audio.

@@ -414,14 +414,14 @@ public class AudioHandler extends CordovaPlugin {
         for (AudioPlayer audio : this.players.values()) {
             if (audio.getState() == AudioPlayer.STATE.MEDIA_RUNNING.ordinal()) {
                 this.pausedForFocus.add(audio);
-                audio.setVolume(0.5);
+                audio.setVolume(0.5f);
             }
         }
     }
 
     public void resumeAllGainedFocus() {
         for (AudioPlayer audio : this.pausedForFocus) {
-            audio.setVolume(1.0);
+            audio.setVolume(1.0f);
             audio.startPlaying(null);
         }
         this.pausedForFocus.clear();

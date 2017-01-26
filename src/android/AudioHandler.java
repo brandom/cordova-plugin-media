@@ -30,7 +30,7 @@ import android.media.AudioManager;
 import android.media.AudioManager.OnAudioFocusChangeListener;
 import android.net.Uri;
 import android.os.Build;
-import sun.audio.AudioPlayer;
+// import sun.audio.AudioPlayer;
 
 import java.security.Permission;
 import java.util.ArrayList;

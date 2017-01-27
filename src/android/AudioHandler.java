@@ -32,10 +32,10 @@ import android.net.Uri;
 import android.os.Build;
 // import sun.audio.AudioPlayer;
 
+import java.io.File;
 import java.security.Permission;
 import java.util.ArrayList;
 
-import org.apache.cordova.file.File;
 import org.apache.cordova.LOG;
 import org.apache.cordova.PluginResult;
 import org.json.JSONArray;

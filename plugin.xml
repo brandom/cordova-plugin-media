@@ -50,6 +50,9 @@ id="cordova-plugin-media"
             <feature name="DiskLRUCache">
                 <param name="android-package" value="com.jakewharton.disklrucache"/>
             </feature>
+            <feature name="CommonsIO">
+                <param name="android-package" value="org.apache.commons.io"/>
+            </feature>
             <feature name="SimpleDiskCache">
                 <param name="android-package" value="cz.fhucho.android.util"/>
             </feature>
@@ -68,6 +71,7 @@ id="cordova-plugin-media"
         <source-file src="lib/DiskLruCache/DiskLruCache.java" target-dir="src/com/jakewharton/disklrucache" />
         <source-file src="lib/DiskLruCache/StrictLineReader.java" target-dir="src/com/jakewharton/disklrucache" />
         <source-file src="lib/DiskLruCache/Util.java" target-dir="src/com/jakewharton/disklrucache" />
+        <source-file src="lib/commons-io/commons-io-2.5.jar" target-dir="src/org/apache/commons/io" />
         <source-file src="lib/simple-disk-cache/SimpleDiskCache.java" target-dir="src/cz/fhucho/android/util" />
     </platform>
 

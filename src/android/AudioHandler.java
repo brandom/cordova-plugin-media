@@ -59,7 +59,8 @@ import cz.fhucho.android.util.SimpleDiskCache;
  */
 public class AudioHandler extends CordovaPlugin {
 
-    public static SimpleDiskCache cache = SimpleDiskCache.open("test", 1.0f, 10000);
+    public static File cachPath = new File("/test");
+    public static SimpleDiskCache cache = SimpleDiskCache.open(cachePath, 1.0f, 10000);
 
     public static String TAG = "AudioHandler";
     HashMap<String, AudioPlayer> players;  // Audio player object

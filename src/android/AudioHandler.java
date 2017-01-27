@@ -33,6 +33,7 @@ import android.os.Build;
 // import sun.audio.AudioPlayer;
 
 import java.io.File;
+import java.io.IOException;
 import java.security.Permission;
 import java.util.ArrayList;
 
@@ -91,7 +92,8 @@ public class AudioHandler extends CordovaPlugin {
             SimpleDiskCache cache = SimpleDiskCache.open(this.cachePath, 1, 5000000);
             return;
         } catch(IOException e) {
-            return null;
+            // incompatible type - return null
+            return; 
         }
     }
 

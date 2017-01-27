@@ -24,6 +24,7 @@ import org.apache.cordova.CordovaResourceApi;
 import org.apache.cordova.PermissionHelper;
 
 import android.Manifest;
+import android.File;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.media.AudioManager;

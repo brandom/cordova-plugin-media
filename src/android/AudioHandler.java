@@ -24,7 +24,6 @@ import org.apache.cordova.CordovaResourceApi;
 import org.apache.cordova.PermissionHelper;
 
 import android.Manifest;
-import android.File;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.media.AudioManager;
@@ -36,6 +35,7 @@ import android.os.Build;
 import java.security.Permission;
 import java.util.ArrayList;
 
+import org.apache.cordova.file.File;
 import org.apache.cordova.LOG;
 import org.apache.cordova.PluginResult;
 import org.json.JSONArray;

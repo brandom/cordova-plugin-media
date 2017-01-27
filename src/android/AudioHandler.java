@@ -87,7 +87,12 @@ public class AudioHandler extends CordovaPlugin {
         this.pausedForPhone = new ArrayList<AudioPlayer>();
         this.pausedForFocus = new ArrayList<AudioPlayer>();
         this.cachePath.mkdirs();
-        // SimpleDiskCache cache = SimpleDiskCache.open(this.cachePath, 1, 5000000);
+        try {
+            SimpleDiskCache cache = SimpleDiskCache.open(this.cachePath, 1, 5000000);
+            return;
+        } catch(IOException e) {
+            return null;
+        }
     }
 
 
